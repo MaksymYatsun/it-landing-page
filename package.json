@@ -1,0 +1,24 @@
+{
+  "name": "bilgi-teknolojilerind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaksymYatsun/bilgi-teknolojilerind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaksymYatsun/bilgi-teknolojilerind/issues"
+  },
+  "homepage": "https://github.com/MaksymYatsun/bilgi-teknolojilerind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
