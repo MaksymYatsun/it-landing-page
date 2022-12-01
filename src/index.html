@@ -10,8 +10,8 @@
 </head>
 
 <body class="font-body">
-    <header class="static">
-        <div class="container px-5 mx-auto flex justify-between">
+    <header class="absolute top-0 w-full">
+        <div class="container px-5 py-9 mx-auto flex justify-between">
             <nav class="hidden">
                 <ul>
                     <li>Çözüm ve Hizmetler</li>
@@ -35,12 +35,18 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="container px-5 mx-auto">
-                <h2>Bilgi Teknolojilerinde 23 Yıllık Tecrübe</h2>
-                <p>Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış
-                    uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</p>
-                <form action=""><input type="text"><button>Kayıt Ol</button></form>
+        <section class="bg-cover bg-[62%] bg-[url('../src/img/hero.jpg')]">
+            <div class="container px-5 pt-36 pb-20 mx-auto">
+                <h2 class="text-[42px] font-extrabold text-center mb-8">Bilgi Teknolojilerinde 23 Yıllık Tecrübe</h2>
+                <p class="text-xs text-center mb-12">Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için
+                    farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi
+                    hizmetleri sunmaktayız.</p>
+                <form class="bg-white rounded-lg py-1 pl-5 pr-1 flex" action>
+                    <input class="placeholder:opacity-40 placeholder:text-black" placeholder="Mail bültenimize kayıt ol"
+                        type="text">
+                    <button class="rounded-lg bg-primary-orange text-white font-extrabold px-5 py-4 ml-auto">Kayıt
+                        Ol</button>
+                </form>
             </div>
         </section>
         <section>
