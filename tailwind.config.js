@@ -2,16 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screens: {
-      'desktop': '1440px'
-    },
-    colors: {
-      'primary-orange': '#F84646'
-    },
     fontFamily: {
       body: ['Manrope']
     },
     extend: {
+      colors: {
+        'primary-orange': '#F84646'
+      },
+      screens: {
+        'desktop': '1440px'
+      },
     }
   },
   plugins: [],

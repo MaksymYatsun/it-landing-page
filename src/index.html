@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link href="/dist/output.css" rel="stylesheet">
     <title>Bilgi Teknoloilerind</title>
 </head>
 
-<body>
-    <header>
-        <div class="container px-5 mx-auto">
-            <nav>
+<body class="font-body">
+    <header class="static">
+        <div class="container px-5 mx-auto flex justify-between">
+            <nav class="hidden">
                 <ul>
                     <li>Çözüm ve Hizmetler</li>
                     <li>Ürünler</li>
@@ -21,49 +21,60 @@
                     <li>Kurumsal</li>
                 </ul>
             </nav>
-            <button></button>
-            <button>İletişim</button>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M5 16H27" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                    <path d="M5 8H27" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                    <path d="M5 24H27" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                </svg>
+            </button>
+            <button class="rounded-[5px] bg-primary-orange px-5 py-[10px] text-white text-sm">İletişim</button>
         </div>
     </header>
     <main>
         <section>
             <div class="container px-5 mx-auto">
                 <h2>Bilgi Teknolojilerinde 23 Yıllık Tecrübe</h2>
-                <p>Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</p>
+                <p>Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış
+                    uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</p>
                 <form action=""><input type="text"><button>Kayıt Ol</button></form>
             </div>
         </section>
         <section>
             <div class="container px-5 mx-auto">
                 <h2>Kalite ve Süreç Yönetimi</h2>
-                <p>Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</p>
+                <p>Müşterilerimizin yüksek kalite seviyelerini koruyabilmeleri için farklı sektörlerde tecrübe kazanmış
+                    uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</p>
                 <div>
-                    <img src="" alt="">
+                    <img src alt>
                     <h3>Döküman Analizi</h3>
                     <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src alt>
                     <h3>Kabul ve Değerlendirme</h3>
                     <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src alt>
                     <h3>Paydaş Analizi</h3>
                     <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src alt>
                     <h3>Akış Diyagramları</h3>
                     <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src alt>
                     <h3>Prototipleme</h3>
                     <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src alt>
                     <h3>İş Kuralları Analizi</h3>
                     <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
                 </div>
@@ -75,15 +86,15 @@
                 <span>IoT Destekli Çözümler</span>
                 <div>
                     <h3>Yazılım Kalitesini Arttırıyoruz</h3>
-                    <img src="" alt="">
+                    <img src alt>
                 </div>
                 <div>
                     <h3>Olası Hataları Önceden Belirliyoruz</h3>
-                    <img src="" alt="">
+                    <img src alt>
                 </div>
                 <div>
                     <h3>Oluşabilecek Riskleri Önlüyoruz</h3>
-                    <img src="" alt="">
+                    <img src alt>
                 </div>
                 <div>
                     <h3>Zaman ve Maliyetten Tasarruf Sağlıyoruz</h3>
@@ -95,13 +106,19 @@
                 <article>
                     <picture></picture>
                     <h3>Kalite ve Süreç Yönetimi</h3>
-                    <p>Deneyimli kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini şirketinizde uygulamak ve geliştirmek için yanınızdayız.</p>
+                    <p>Deneyimli kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje
+                        yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu
+                        düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini
+                        şirketinizde uygulamak ve geliştirmek için yanınızdayız.</p>
                     <button>Keşfet</button>
                 </article>
                 <article>
                     <picture></picture>
                     <h3>Kalite ve Süreç Yönetimi</h3>
-                    <p>Deneyimli kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini şirketinizde uygulamak ve geliştirmek için yanınızdayız.</p>
+                    <p>Deneyimli kadromuz; birçok farklı sektörden deneyimli, PMP® sertifikasına sahip, uzman proje
+                        yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu
+                        düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini
+                        şirketinizde uygulamak ve geliştirmek için yanınızdayız.</p>
                     <button>Keşfet</button>
                 </article>
             </div>
@@ -110,24 +127,24 @@
             <div class="container px-5 mx-auto">
                 <h3>Referanslarımız</h3>
                 <p>Bize güvenen ve beraber çalıştığımız iş ortaklarımız</p>
-                <div><a href=""><img src="" alt=""></a></div>
-                <div><a href=""><img src="" alt=""></a></div>
-                <div><a href=""><img src="" alt=""></a></div>
-                <div><a href=""><img src="" alt=""></a></div>
-                <div><a href=""><img src="" alt=""></a></div>
-                <div><a href=""><img src="" alt=""></a></div>
-                <div><a href=""><img src="" alt=""></a></div>
-                <div><a href=""><img src="" alt=""></a></div>
+                <div><a href=""><img src alt></a></div>
+                <div><a href=""><img src alt></a></div>
+                <div><a href=""><img src alt></a></div>
+                <div><a href=""><img src alt></a></div>
+                <div><a href=""><img src alt></a></div>
+                <div><a href=""><img src alt></a></div>
+                <div><a href=""><img src alt></a></div>
+                <div><a href=""><img src alt></a></div>
                 <div><button>Tümünü Gör</button></div>
             </div>
         </section>
         <section>
             <div class="container px-5 mx-auto">
                 <div>
-                        <img src="" alt="">
-                        <h3>Bize Ulaşın</h3>
-                        <p>Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle irtibata geçin.</p>
-                        <button>Bize Ulaşın</button>
+                    <img src alt>
+                    <h3>Bize Ulaşın</h3>
+                    <p>Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle irtibata geçin.</p>
+                    <button>Bize Ulaşın</button>
                 </div>
             </div>
         </section>
