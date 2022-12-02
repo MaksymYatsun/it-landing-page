@@ -3,4 +3,19 @@
 
 @tailwind base;
 @tailwind components;
+.btn-states {
+    @apply border-2 border-primary-orange hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:bg-white active:text-primary-orange transition-all;
+}
+
+.nav-states {
+    @apply outline-none transition-all rounded-lg block hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:outline-primary-orange;
+}
+
+.footer-link-states {
+    @apply w-full outline-none transition-all block hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:underline;
+}
+
+.foter-social-states {
+    @apply outline-none transition-all block rounded-lg border-2 border-transparent hover:-translate-y-1 hover:scale-125 focus:outline-none focus:scale-125 focus:-translate-y-1 active:border-white;
+}
 @tailwind utilities;
