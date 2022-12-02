@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
     <link href="/dist/output.css" rel="stylesheet">
     <script src="burger.js" defer></script>
     <title>Bilgi Teknoloilerind</title>
+    <link href="img/svg/arrow.svg" rel="icon" type="image/x-icon">
 </head>
 
 <body class="font-body">
@@ -248,11 +249,12 @@
         </section>
         <section class="text-center">
             <div class="container px-5 lg:px-[60px] pt-[90px] pb-[30px] desktop:py-40 desktop:px-32 mx-auto">
+                <h2 class="hidden">Title</h2>
                 <article class="mb-[60px] lg:flex lg:flex-row-reverse lg:justify-between lg:gap-[50px]">
                     <picture>
                         <source srcset="img/article-1-xl.jpg" media="(min-width: 1440px)">
                         <source srcset="img/article-1-lg.jpg" media="(min-width: 1024px)">
-                        <img class="w-full mb-[30px] rounded-[9px]" src="img/article-1-xs.jpg" alt>
+                        <img class="w-full mb-[30px] rounded-[9px]" src="img/article-1-xs.jpg" alt="team-work-image">
                     </picture>
                     <div class="flex flex-col lg:w-1/2 lg:text-left lg:pb-7 desktop:w-[45%] desktop:justify-between">
                         <h3
@@ -273,7 +275,7 @@
                     <picture>
                         <source srcset="img/article-2-xl.jpg" media="(min-width: 1440px)">
                         <source srcset="img/article-2-lg.jpg" media="(min-width: 1024px)">
-                        <img class="w-full mb-[30px] rounded-[9px]" src="img/article-2-xs.jpg" alt>
+                        <img class="w-full mb-[30px] rounded-[9px]" src="img/article-2-xs.jpg" alt="advanced-laptop-image">
                     </picture>
                     <div class="flex flex-col lg:w-1/2 lg:text-left lg:pb-7 desktop:w-[45%] desktop:justify-between">
                         <h3 class="text-4xl desktop:leading-[76px] lg:text-[58px] lg:leading-[60px] font-bold mb-5">
@@ -375,33 +377,43 @@
         <footer class="bg-primary-orange text-white font-seccondary">
             <div class="container px-5 lg:px-[60px] py-20 mx-auto desktop:px-[105px] desktop:py-20">
                 <div class="lg:flex lg:justify-between lg:mb-5 text-[#E6E6E6]">
-                    <ul>
+                    <div>
                         <h3 class="mb-6 text-white font-bold">Çözüm ve Hizmetler</h3>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Yazılım Geliştirme</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Outsourcing</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Kalite ve Süreç Yönetimi</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Danışmanlık</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">IoT Destekli Çözümler</a></li>
-                    </ul>
-                    <ul>
+                        <ul>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Yazılım Geliştirme</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Outsourcing</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Kalite ve Süreç Yönetimi</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Danışmanlık</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">IoT Destekli Çözümler</a></li>
+                        </ul>
+                    </div>
+                    <div>
                         <h3 class="mb-6 text-white font-bold">Ürünler</h3>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Eğitim Yönetim Sistemi</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">İnsan Sermayesi Yönetim Sistemi</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Müşteri İlişkileri Yönetim Sistemi</a>
-                        </li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">İçerik Yönetim Sistemi</a></li>
-                    </ul>
-                    <ul>
+                        <ul>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Eğitim Yönetim Sistemi</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">İnsan Sermayesi Yönetim Sistemi</a>
+                            </li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Müşteri İlişkileri Yönetim
+                                    Sistemi</a>
+                            </li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">İçerik Yönetim Sistemi</a></li>
+                        </ul>
+                    </div>
+                    <div>
                         <h3 class="mb-6 text-white font-bold">Kurumsal</h3>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Hakkımızda</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Belge ve Yetkinlikler</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">İş Ortakları</a></li>
-                    </ul>
-                    <ul>
+                        <ul>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Hakkımızda</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Belge ve Yetkinlikler</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">İş Ortakları</a></li>
+                        </ul>
+                    </div>
+                    <div>
                         <h3 class="mb-6 text-white font-bold">İletişim</h3>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Bilgi İstek Formu</a></li>
-                        <li class="mb-6"><a class="footer-link-states" href="#">Uzman Talep Formu</a></li>
-                    </ul>
+                        <ul>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Bilgi İstek Formu</a></li>
+                            <li class="mb-6"><a class="footer-link-states" href="#">Uzman Talep Formu</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="lg:flex lg:flex-row-reverse lg:justify-between">
                     <ul class="flex flex-row mb-16 lg:mb-0">
