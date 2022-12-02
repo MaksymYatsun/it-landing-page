@@ -6,22 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <script src="burger.js" defer></script>
     <title>Bilgi Teknoloilerind</title>
 </head>
 
 <body class="font-body">
-    <header class="absolute top-0 w-full">
+    <header class="absolute top-0 w-full z-10">
         <div class="container px-5 lg:px-10 desktop:px-[122px] py-9 mx-auto flex justify-between">
-            <nav class="hidden lg:flex lg:ml-auto">
+            <nav class="lg:flex lg:ml-auto lg:-translate-x-0 -translate-x-96 transition-all lg:justify-end" id="menu">
                 <ul class="font-bold text-sm lg:flex lg:flex-row">
-                    <li class="py-3 mr-10"><a class="nav-states" href="#">Çözüm ve Hizmetler</a></li>
-                    <li class="py-3 mr-10"><a class="nav-states" href="#">Ürünler</a></li>
-                    <li class="py-3 mr-10"><a class="nav-states" href="#">Teknolojiler</a></li>
-                    <li class="py-3 mr-10"><a class="nav-states" href="#">İnsan Kaynakları</a></li>
-                    <li class="py-3 mr-10"><a class="nav-states" href="#">Kurumsal</a></li>
+                    <li class="py-3 lg:hidden pt-[2px] mr-10"><a
+                            class="text-5xl w-6 h-6 font-thin outline-none transition-all block hover:-translate-y-1 hover:scale-125"
+                            id="close" href="#">&times;</a></li>
+                    <li class="py-3 mr-10"><a class="nav-states" href="#" tabindex="-1">Çözüm ve Hizmetler</a></li>
+                    <li class="py-3 mr-10"><a class="nav-states" href="#" tabindex="-1">Ürünler</a></li>
+                    <li class="py-3 mr-10"><a class="nav-states" href="#" tabindex="-1">Teknolojiler</a></li>
+                    <li class="py-3 mr-10"><a class="nav-states" href="#" tabindex="-1">İnsan Kaynakları</a></li>
+                    <li class="py-3 mr-10"><a class="nav-states" href="#" tabindex="-1">Kurumsal</a></li>
                 </ul>
             </nav>
-            <button class="lg:hidden max-h-11">
+            <button class="lg:hidden max-h-11 absolute top-11 transition-all hover:-translate-y-1 hover:scale-125"
+                id="burger">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path d="M5 16H27" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     </path>
@@ -32,11 +37,11 @@
                 </svg>
             </button>
             <button
-                class="rounded-[5px] bg-primary-orange px-5 py-[10px] text-white text-sm btn-states">İletişim</button>
+                class="rounded-[5px] bg-primary-orange px-5 py-[10px] text-white text-sm btn-states max-h-11">İletişim</button>
         </div>
     </header>
     <main>
-        <section class="bg-cover lg:bg-center bg-[62%] bg-[url('../src/img/hero.jpg')]">
+        <section class="bg-cover lg:bg-center bg-[62%] bg-[url('../src/img/hero.jpg')] transition-all" id="hero">
             <div
                 class="container px-5 lg:px-[84px] pt-36 pb-20 mx-auto desktop:px-[122px] desktop:pt-44 desktop:pb-[122px] sm:bg-opacity-0 bg-white bg-opacity-50 bg-gradient-to-l">
                 <h2
@@ -48,13 +53,12 @@
                     kalite seviyelerini koruyabilmeleri için
                     farklı sektörlerde tecrübe kazanmış uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi
                     hizmetleri sunmaktayız.</p>
-                <form class="bg-white rounded-lg py-1 pl-5 pr-1 flex lg:max-w-[50%] desktop:max-w-[40%]" action>
+                <form class="bg-white rounded-lg py-1 pl-5 pr-1 flex lg:max-w-[50%] desktop:max-w-[40%]" action="/">
                     <input
                         class="placeholder:opacity-40 placeholder:text-black my-auto w-4/6 h-1/2 outline-none transition-all placeholder:transition-all focus:placeholder:opacity-0 focus:border-b-2 focus:border-black hover:placeholder:-translate-x-96"
                         placeholder="Mail bültenimize kayıt ol" type="text">
                     <button
-                        class="rounded-lg bg-primary-orange text-white font-extrabold px-5 py-4 ml-auto border-2 border-primary-orange hover:-translate-x-1 focus:outline-none focus:-translate-x-1 active:bg-white active:text-primary-orange transition-all">Kayıt
-                        Ol</button>
+                        class="rounded-lg bg-primary-orange text-white font-extrabold text-sm lg:text-base px-5 py-4 ml-auto border-2 border-primary-orange hover:-translate-x-1 focus:outline-none focus:-translate-x-1 active:bg-white active:text-primary-orange transition-all">Kayıt&nbsp;Ol</button>
                 </form>
             </div>
         </section>
@@ -67,8 +71,7 @@
                     uzman kadrolarımızla Proje Yönetimi, İş Analizi ve Test Yönetimi hizmetleri sunmaktayız.</p>
                 <div class="grid lg:grid-cols-2 desktop:grid-cols-3">
                     <div class="py-10">
-                        <div
-                            class="relative before:w-11 before:h-11 before:bg-[#FF5391] before:block before:rounded-full before:absolute before:-z-10 before:left-1/2 before:-top-1">
+                        <div class="before:bg-[#FF5391] before:left-1/2 relative bg-circle">
                             <svg class="mx-auto" width="77" height="76" viewBox="0 0 77 76" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -84,8 +87,7 @@
                             amet, elementum.</p>
                     </div>
                     <div class="py-10">
-                        <div
-                            class="relative before:w-11 before:h-11 before:bg-[#7553FF] before:block before:rounded-full before:absolute before:-z-10 before:right-1/2 before:-top-1">
+                        <div class="relative before:bg-[#7553FF] before:right-1/2 bg-circle">
                             <svg class="mx-auto" width="77" height="76" viewBox="0 0 77 76" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -99,8 +101,7 @@
                             amet, elementum.</p>
                     </div>
                     <div class="py-10">
-                        <div
-                            class="relative before:w-11 before:h-11 before:bg-[#FF5353] before:block before:rounded-full before:absolute before:-z-10 before:left-1/2 before:-top-1">
+                        <div class="relative before:bg-[#FF5353] before:left-1/2 bg-circle">
                             <svg class="mx-auto" width="77" height="76" viewBox="0 0 77 76" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M38.5 38V9.5" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -122,8 +123,7 @@
                             amet, elementum.</p>
                     </div>
                     <div class="py-10">
-                        <div
-                            class="relative before:w-11 before:h-11 before:bg-[#53ACFF] before:block before:rounded-full before:absolute before:-z-10 before:right-1/2 before:-top-1">
+                        <div class="relative before:bg-[#53ACFF] before:right-1/2 bg-circle">
                             <svg class="mx-auto" width="77" height="76" viewBox="0 0 77 76" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.5625 61.75V40.375H30.1875" stroke="black" stroke-width="2"
@@ -141,8 +141,7 @@
                             amet, elementum.</p>
                     </div>
                     <div class="py-10">
-                        <div
-                            class="relative before:w-11 before:h-11 before:bg-[#FFBA53] before:block before:rounded-full before:absolute before:-z-10 before:left-1/2 before:-top-1">
+                        <div class="relative before:bg-[#FFBA53] before:left-1/2 bg-circle">
                             <svg class="mx-auto" width="68" height="67" viewBox="0 0 68 67" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -172,8 +171,7 @@
                             amet, elementum.</p>
                     </div>
                     <div class="py-10">
-                        <div
-                            class="relative before:w-11 before:h-11 before:bg-[#53C1FF] before:block before:rounded-full before:absolute before:-z-10 before:right-1/2 before:-top-1">
+                        <div class="relative before:bg-[#53C1FF] before:right-1/2 bg-circle">
                             <svg class="mx-auto" width="77" height="76" viewBox="0 0 77 76" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -279,14 +277,13 @@
                     </picture>
                     <div class="flex flex-col lg:w-1/2 lg:text-left lg:pb-7 desktop:w-[45%] desktop:justify-between">
                         <h3 class="text-4xl desktop:leading-[76px] lg:text-[58px] lg:leading-[60px] font-bold mb-5">
-                            Kalite ve Süreç Yönetimi
+                            Test Yönetimi ve Analizi
                         </h3>
-                        <p class="text-[#808080] mb-10 leading-8">Deneyimli kadromuz; birçok farklı sektörden deneyimli,
-                            PMP®
-                            sertifikasına sahip, uzman proje
-                            yöneticilerinden oluşmaktadır. Projelerinizin yönetimine destek olmak, zayıf olduğunu
-                            düşündüğünüz alanları güçlendirmek, uluslararası geçerliliği olan PMI® metodolojisini
-                            şirketinizde uygulamak ve geliştirmek için yanınızdayız.</p>
+                        <p class="text-[#808080] mb-10 leading-8">Danışmanlığını yürüttüğümüz projelerde yazılım
+                            hatalarını önlemek amacıyla gerçekleştirdiğimiz testleri her proje aşamasında manuel ya da
+                            test otomasyonu ile dikkatle uygulamaktayız. Deneyimli test ekibimiz, kurumlara yüksek
+                            kalitede yazılım testleri hizmeti ile baştan sona güvenli, kaliteli ve tatmin edici bir
+                            müşteri deneyimi sunmaktadır.</p>
                         <button
                             class="bg-primary-orange text-sm font-bold rounded-lg text-white w-full px-3 lg:mt-auto desktop:mt-0 lg:max-w-[160px] py-5 btn-states">Keşfet</button>
                     </div>
@@ -347,7 +344,7 @@
                 class="container px-5 mx-auto pt-20 lg:pt-32 pb-10 lg:pb-24 desktop:px-[165px] desktop:pt-[165px] desktop:pb-[120px]">
                 <div class="mb-10">
                     <div
-                        class="relative before:w-11 before:h-11 before:lg:w-[61px] before:lg:h-[61px] before:bg-primary-orange before:block before:rounded-full before:absolute before:-z-10 before:left-1/2 before:-top-5">
+                        class="relative before:lg:w-[61px] before:lg:h-[61px] before:bg-primary-orange before:left-1/2 lg:before:-top-5 bg-circle">
                         <svg class="mx-auto lg:scale-150" xmlns="http://www.w3.org/2000/svg" width="90" height="90"
                             viewBox="0 0 90 90" fill="none">
                             <path
@@ -365,7 +362,8 @@
                         </svg>
                     </div>
                     <h3 class="font-extrabold text-2xl mb-3 lg:text-5xl">Bize Ulaşın</h3>
-                    <p class="mb-5 lg:mb-7 lg:text-lg">Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi için bizimle
+                    <p class="mb-5 lg:mb-7 lg:text-lg font-medium">Çözüm, hizmet ve ürünlerimiz hakkında detaylı bilgi
+                        için bizimle
                         irtibata
                         geçin.</p>
                     <button
