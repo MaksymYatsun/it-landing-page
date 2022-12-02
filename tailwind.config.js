@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
+      seccondary: ['Inter, sans-serif'],
       body: ['Manrope']
     },
     extend: {
