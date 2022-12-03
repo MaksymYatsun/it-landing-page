@@ -7,12 +7,8 @@
 <div align="center">
   <a href="https://github.com/MaksymYatsun/bilgi-teknolojilerind" style="color: white;"><h1><b>Bilgi Teknolojirinde</b></h1></a>
 
-<h3 align="center">Landing page for IT company</h3>
-  <p align="center">
-    Built with HTML only approach landing page
-  </p>
-  <p align="center">
-  </p>
+<h3 align="center">Landing page built with tailwindcss</h3>
+<br></br>
   <img src="src/img/project-screenshot.jpg" style="width: 80%">
 </div>
 
@@ -35,26 +31,12 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    git clone https://github.com/MaksymYatsun/bilgi-teknolojilerind.git
    ```
-3. Install 'tailwindcss'
-   ```sh
-   npm install -D tailwindcss
-   ```
-   ```sh
-   npx tailwind init
-   ```
-4. Start the Tailwind CLI build process:
+3. Start the Tailwind CLI build process:
    ```sh
    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
    ```
 
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-If you would like to contribute to this project feel free to submit a pull request.
-
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [tailwindcss]: https://tailwindcss.com/
 [npm]: https://www.npmjs.com/
