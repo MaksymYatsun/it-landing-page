@@ -3,23 +3,23 @@
 
 @tailwind base;
 @tailwind components;
-.btn-states {
-    @apply border-2 border-primary-orange hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:bg-white active:text-primary-orange transition-all;
+.btn {
+    @apply border-2 border-primary hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:bg-white active:text-primary transition-all;
 }
 
-.nav-states {
-    @apply outline-none transition-all rounded-lg block hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:outline-primary-orange;
+.nav {
+    @apply outline-none transition-all rounded-lg block hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:outline-primary;
 }
 
-.partners-states {
+.partners-logo {
     @apply transition-all outline-none hover:scale-110 focus:-translate-y-1 active:-translate-y-1;
 }
 
-.footer-link-states {
+.footer-link {
     @apply w-full outline-none transition-all block hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:underline;
 }
 
-.footer-social-states {
+.footer-social {
     @apply outline-none transition-all block rounded-lg border-2 border-transparent hover:-translate-y-1 hover:scale-125 focus:outline-none focus:scale-125 focus:-translate-y-1 active:border-white;
 }
 
