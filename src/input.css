@@ -1,29 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 .btn {
-    @apply border-2 border-primary hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:bg-white active:text-primary transition-all;
+  @apply border-2 border-primary transition-all hover:-translate-y-1 focus:-translate-y-1 focus:scale-105 focus:outline-none active:bg-white active:text-primary;
 }
 
 .nav {
-    @apply outline-none transition-all rounded-lg block hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:outline-primary;
+  @apply block rounded-lg outline-none transition-all hover:-translate-y-1 focus:-translate-y-1 focus:scale-105 focus:outline-none active:outline-primary;
 }
 
 .partners-logo {
-    @apply transition-all outline-none hover:scale-110 focus:-translate-y-1 active:-translate-y-1;
+  @apply outline-none transition-all hover:scale-110 focus:-translate-y-1 active:-translate-y-1;
 }
 
 .footer-link {
-    @apply w-full outline-none transition-all block hover:-translate-y-1 focus:outline-none focus:scale-105 focus:-translate-y-1 active:underline;
+  @apply block w-full outline-none transition-all hover:-translate-y-1 focus:-translate-y-1 focus:scale-105 focus:outline-none active:underline;
 }
 
 .footer-social {
-    @apply outline-none transition-all block rounded-lg border-2 border-transparent hover:-translate-y-1 hover:scale-125 focus:outline-none focus:scale-125 focus:-translate-y-1 active:border-white;
+  @apply block rounded-lg border-2 border-transparent outline-none transition-all hover:-translate-y-1 hover:scale-125 focus:-translate-y-1 focus:scale-125 focus:outline-none active:border-white;
 }
 
 .bg-circle {
-    @apply before:w-11 before:h-11 before:block before:rounded-full before:absolute before:-z-10 before:-top-1;
+  @apply before:absolute before:-top-1 before:-z-10 before:block before:h-11 before:w-11 before:rounded-full;
 }
 @tailwind utilities;
