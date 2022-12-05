@@ -9,10 +9,14 @@
 
 <h3 align="center">Landing page built with tailwindcss</h3>
 <br></br>
-  <img src="src/img/project-screenshot.jpg" style="width: 80%">
+  <a href="https://maksymyatsun.github.io/bilgi-teknolojilerind/"><img src="src/img/project-screenshot.jpg" style="width: 80%"></a>
 </div>
 
 <!-- ABOUT THE PROJECT -->
+
+## Try it Out
+
+https://maksymyatsun.github.io/bilgi-teknolojilerind/
 
 ## Built With
 
