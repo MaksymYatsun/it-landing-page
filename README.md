@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
 <br>
 <div align="center">
-  <a href="https://github.com/MaksymYatsun/bilgi-teknolojilerind" style="color: white;"><h1><b>Bilgi Teknolojirinde</b></h1></a>
+  <a href="https://github.com/MaksymYatsun/it-landing-page" style="color: white;"><h1><b>Bilgi Teknolojirinde</b></h1></a>
 
 <h3 align="center">Landing page built with tailwindcss</h3>
 <br></br>
@@ -16,7 +16,7 @@
 
 ## Try it Out
 
-https://maksymyatsun.github.io/bilgi-teknolojilerind/
+https://maksymyatsun.github.io/it-landing-page/
 
 ## Built With
 
